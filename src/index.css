@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 196 100% 47%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 196 100% 47%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 240 10% 14%;
+    --foreground: 210 40% 98%;
+
+    --card: 240 10% 18%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 10% 14%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 196 100% 47%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 240 5% 26%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 5% 26%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 240 5% 26%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 5% 26%;
+    --input: 240 5% 26%;
+    --ring: 196 100% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 dark:bg-smartpad-navy/70 backdrop-blur-sm border border-white/20 dark:border-white/10 shadow-lg;
+  }
+  
+  .feature-card {
+    @apply glass-card p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
+  }
+  
+  .typing-animation {
+    @apply overflow-hidden whitespace-nowrap border-r-4 border-smartpad-blue dark:border-smartpad-blue;
+    animation: typing 3.5s steps(40, end), cursor 0.75s step-end infinite;
+  }
+  
+  .dashboard-container {
+    @apply mx-auto overflow-hidden rounded-xl border bg-background/95 backdrop-blur-sm shadow-xl transition-all duration-300;
+  }
+  
+  .dashboard-sidebar-item {
+    @apply flex items-center gap-3 px-2 py-2 rounded-lg cursor-pointer transition-all duration-200;
+  }
+  
+  .dashboard-sidebar-item:hover {
+    @apply bg-muted/50 dark:bg-muted/30;
+  }
+  
+  .dashboard-sidebar-item.active {
+    @apply bg-muted/70 dark:bg-muted/50;
+  }
+  
+  .suggestion-card {
+    @apply bg-background rounded-lg p-3 border hover:border-smartpad-blue/50 hover:bg-smartpad-blue/5 cursor-pointer transition-all duration-200;
+  }
+  
+  .editor-toolbar {
+    @apply flex items-center gap-2 p-2 border-b bg-muted/10;
+  }
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
