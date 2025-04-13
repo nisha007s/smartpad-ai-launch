@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# SmartPad AI
 
-## Project info
+A modern, intelligent note-taking application with AI-powered features for smart text formatting, voice recognition, and collaborative capabilities.
 
-**URL**: https://lovable.dev/projects/53b2c680-51bd-4169-9706-54bcce9dfd2b
+## Features
 
-## How can I edit this code?
+- **Smart Text Formatting**: Automatically detects and formats tasks, important notes, headers, dates, and lists
+- **Voice Recognition**: Dictate notes hands-free with built-in speech recognition
+- **Task Management**: Create, track, and complete tasks within your notes
+- **AI Suggestions**: Get intelligent recommendations based on your note content
+- **Collaboration**: Share and work on notes with others in real-time
+- **Dark Mode Support**: Comfortable note-taking in any lighting condition
+- **Responsive Design**: Works seamlessly across desktop and mobile devices
 
-There are several ways of editing your application.
+## Technology Stack
 
-**Use Lovable**
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **UI Components**: Shadcn/UI
+- **State Management**: React Hooks
+- **AI Integration**: Custom formatting and suggestion algorithms
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/53b2c680-51bd-4169-9706-54bcce9dfd2b) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v16+)
+- npm or Bun
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository
+   ```
+   git clone https://github.com/nisha007s/smartpad-ai-launch.git
+   cd smartpad-ai-launch
+   ```
 
-Follow these steps:
+2. Install dependencies
+   ```
+   npm install
+   # or
+   bun install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Start the development server
+   ```
+   npm run dev
+   # or
+   bun dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. Open your browser and navigate to `http://localhost:3000`
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Usage
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- Create a new note using the "New Note" button
+- Type content and see smart formatting in action
+- Use the microphone button to dictate text
+- Toggle between notes, tasks, and favorites sections
+- View AI suggestions based on your note content
 
-**Edit a file directly in GitHub**
+## License
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-**Use GitHub Codespaces**
+## Acknowledgements
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/53b2c680-51bd-4169-9706-54bcce9dfd2b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Icons provided by Lucide Icons
+- UI components powered by Shadcn/UI
+- Developed by Jasnoor and Nisha]
